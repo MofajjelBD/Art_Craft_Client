@@ -43,7 +43,7 @@ const router = createBrowserRouter([
             <MyList></MyList>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/craft"),
+        loader: () => fetch("/fakeData.json"),
       },
       {
         path: "/login",

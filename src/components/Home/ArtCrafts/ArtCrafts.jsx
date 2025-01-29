@@ -1,10 +1,8 @@
-import { useLoaderData } from "react-router-dom";
 import ArtCraft from "./ArtCraft";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
 const ArtCrafts = ({ headTitle, headDescription, filteredItems }) => {
-  const ArtCraftData = useLoaderData();
   const [ArtCraftLength, setArtCraftLength] = useState(6);
   return (
     <>
@@ -26,10 +24,10 @@ const ArtCrafts = ({ headTitle, headDescription, filteredItems }) => {
           ))}
           <div>
             <button
-              onClick={() => setArtCraftLength(ArtCraftData.length)}
+              onClick={() => setArtCraftLength(filteredItems.length)}
               className={
-                ArtCraftLength === ArtCraftData.length ||
-                ArtCraftData.length <= 6
+                ArtCraftLength === filteredItems.length ||
+                filteredItems.length <= 6
                   ? "hidden"
                   : "btn font-WorkSans text-white text-opacity-100 font-semibold text-base md:text-lg border border-transparent bg-green-500 px-5 hover:bg-green-500"
               }

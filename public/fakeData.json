@@ -38,7 +38,7 @@
     "customization": "yes",
     "processing_time": 5,
     "stock_status": "In stock",
-    "user_email": "craftsbyemma@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "Emma Brown"
   },
   {
@@ -52,7 +52,7 @@
     "customization": "yes",
     "processing_time": 3,
     "stock_status": "In stock",
-    "user_email": "user1@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "Alice"
   },
   {
@@ -66,7 +66,7 @@
     "customization": "yes",
     "processing_time": 2,
     "stock_status": "Made to Order",
-    "user_email": "user2@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "Bob"
   },
   {
@@ -80,7 +80,7 @@
     "customization": "no",
     "processing_time": 7,
     "stock_status": "In stock",
-    "user_email": "user3@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "Carol"
   },
   {
@@ -94,7 +94,7 @@
     "customization": "yes",
     "processing_time": 4,
     "stock_status": "Made to Order",
-    "user_email": "user4@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "David"
   },
   {
@@ -108,7 +108,7 @@
     "customization": "yes",
     "processing_time": 5,
     "stock_status": "In stock",
-    "user_email": "user5@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "Eve"
   },
   {
@@ -122,7 +122,7 @@
     "customization": "yes",
     "processing_time": 7,
     "stock_status": "Made to Order",
-    "user_email": "user6@example.com",
+    "user_email": "developer2web@gmail.com",
     "user_name": "Frank"
   }
 ]
