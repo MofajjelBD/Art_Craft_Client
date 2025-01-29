@@ -43,7 +43,7 @@ const router = createBrowserRouter([
             <MyList></MyList>
           </PrivateRoute>
         ),
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("http://localhost:5000/craft"),
       },
       {
         path: "/login",
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/craft-view/:idd",
+        path: "/item-view/:_id",
         element: (
           <PrivateRoute>
             <ArtCraftView></ArtCraftView>

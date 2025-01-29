@@ -2,10 +2,11 @@ import PropTypes from "prop-types";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const ArtCraft = ({ ArtCraftData = {} }) => {
   const {
-    // id,
+    _id,
     image,
     item_name,
     subcategory_name,
@@ -89,19 +90,19 @@ const ArtCraft = ({ ArtCraftData = {} }) => {
           <hr />
           <div className="py-2">
             <p className="text-lg font-semibold text-gray-700 dark:text-[#878787] text-opacity-100">
-              {user_email}
+              E-mail: {user_email}
             </p>
             <p className="text-lg font-semibold text-gray-700 dark:text-[#878787] text-opacity-100">
-              {user_name}
+              User: {user_name}
             </p>
           </div>
           <div className="text-start">
-            <button
-              // onClick={() => handleAddToCraft()}
-              className="btn rounded-full text-[#150B2B] bg-myGreen btn-success font-medium border border-myGreen px-6 hover:bg-slate-200 hover:text-myGreen hover:border-myGreen"
+            <Link
+              to={`/item-view/${_id}`}
+              className="btn rounded-full text-white bg-blue-900 hover:border-gray-400 btn-success border border-myGreen px-6 hover:scale-110 hover:bg-blue-950 font-semibold duration-300"
             >
-              Want to Cook
-            </button>
+              View Details
+            </Link>
           </div>
         </div>
       </div>

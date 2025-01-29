@@ -4,7 +4,7 @@ import { useLoaderData, useLocation, useParams } from "react-router-dom";
 
 const ArtCraftView = () => {
   const ArtCrafts = useLoaderData();
-  const { idd } = useParams();
+  const { _id } = useParams();
   const locationDirectory = useLocation();
 
   const [ArtCraftData, setArtCraftData] = useState(null);
@@ -13,23 +13,25 @@ const ArtCraftView = () => {
   // Fetch the book based on the dynamic id
   useEffect(() => {
     if (Array.isArray(ArtCrafts)) {
-      const foundArtCraft = ArtCrafts.find((ArtCraft) => ArtCraft.id === idd);
+      const foundArtCraft = ArtCrafts.find((ArtCraft) => ArtCraft._id === _id);
       setArtCraftData(foundArtCraft);
       setLoading(false);
     }
-  }, [ArtCrafts, idd, locationDirectory]);
+  }, [ArtCrafts, _id, locationDirectory]);
 
   const {
-    // id,
-    title,
-    segment_name,
-    description,
-    status,
-    price,
-    size,
-    location,
-    facilities,
+    // _id,
     image,
+    item_name,
+    subcategory_name,
+    short_description,
+    price,
+    rating,
+    customization,
+    processing_time,
+    stock_status,
+    user_email,
+    user_name,
   } = ArtCraftData || {};
 
   if (loading || !ArtCraftData) {
@@ -42,7 +44,7 @@ const ArtCraftView = () => {
   return (
     <div className="mx-auto px-4 lg:px-0 my-8">
       <Helmet>
-        <title>ArtCraft View | Freshy Recipe Restaurant</title>
+        <title>Item View | Art & Craft</title>
       </Helmet>
       <div className="grid grid-cols-2 gap-12">
         <div className="col-span-2 md:col-span-1 grid">
@@ -52,14 +54,14 @@ const ArtCraftView = () => {
         </div>
         <div className="col-span-2 md:col-span-1 grid items-center">
           <h2 className="card-title text-2xl font-bold font-Playfair text-Primary dark:text-Primary-dark">
-            {title}
+            {item_name}
           </h2>
           <p className="text-base font-medium  text-Primary dark:text-Primary-dark text-opacity-80 py-2">
-            {segment_name}
+            {subcategory_name}
           </p>
           <div className="py-3 border-t my-1">
             <span className="text-base font-medium  text-Primary dark:text-Primary-dark text-opacity-80 flex gap-2">
-              {description}
+              {short_description}
             </span>
           </div>
           <div className="py-2">
@@ -74,14 +76,14 @@ const ArtCraftView = () => {
             <strong className="font-bold text-base leading-7  text-Primary dark:text-Primary-dark items-center w-full md:w-auto flex">
               Facilities
             </strong>
-            {facilities.map((tags, Index) => (
+            {/* {facilities.map((tags, Index) => (
               <span
                 key={Index}
                 className="text-base text-green-500 font-medium  rounded-full py-2 px-5 bg-green-50"
               >
                 {tags}
               </span>
-            ))}
+            ))} */}
           </div>
           <div className="my-2 border-b"></div>
           <div className="overflow-x-auto mb-6">
@@ -92,7 +94,7 @@ const ArtCraftView = () => {
                     Size:
                   </td>
                   <td className="p-0 py-1  text-base text-opacity-60 leading-7 font-semibold">
-                    {size}
+                    {rating}
                   </td>
                 </tr>
                 <tr className="border-0 my-2">
@@ -100,7 +102,7 @@ const ArtCraftView = () => {
                     Location:
                   </td>
                   <td className="p-0 py-1  text-base text-opacity-60 leading-7 font-semibold">
-                    {location}
+                    {customization}
                   </td>
                 </tr>
                 <tr className="border-0 my-2">
@@ -108,7 +110,16 @@ const ArtCraftView = () => {
                     Status:
                   </td>
                   <td className="p-0 py-1  text-base text-opacity-60 leading-7 font-semibold">
-                    {status}
+                    {processing_time}
+                  </td>
+                  <td className="p-0 py-1  text-base text-opacity-60 leading-7 font-semibold">
+                    {stock_status}
+                  </td>
+                  <td className="p-0 py-1  text-base text-opacity-60 leading-7 font-semibold">
+                    {user_email}
+                  </td>
+                  <td className="p-0 py-1  text-base text-opacity-60 leading-7 font-semibold">
+                    {user_name}
                   </td>
                 </tr>
               </tbody>
