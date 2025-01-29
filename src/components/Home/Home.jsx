@@ -16,8 +16,8 @@ const Home = () => {
       </Helmet>
       <Swiper></Swiper>
       <ArtCrafts
-        headTitle={"Top List is Back"}
-        headDescription={"All ours best meals in one delicious snap"}
+        headTitle={"The Craft List"}
+        headDescription={"All our best creations in one inspiring gallery"}
         filteredItems={filteredItems}
       ></ArtCrafts>
       <Testimonial></Testimonial>

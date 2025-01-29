@@ -24,15 +24,15 @@ export default function App() {
             <div className="my-auto mx-auto py-0 px-10 md:px-24 justify-center w-full h-full !absolute card-body flex md:items-start">
               <div className="max-w-[420px] text-start">
                 <h1 className="animate__animated animate__bounce font-bold text-lg md:leading-8 lg:leading-10 md:text-[26px] lg:text-[36px] text-white text-center sm:text-start mx-auto lg:mb-2">
-                  Finally, the dish you have been waiting for your table
+                  Finally, the masterpiece you have been crafting for your
+                  gallery
                 </h1>
                 <p className="animate__animated animate__fadeIn text-white text-sm md:text-base lg:leading-8 text-center sm:text-start md:mb-2">
-                  For super nutrition, the chic and health conscious flock to
-                  Freshy.
+                  For vibrant wellness, discerning few gravitate to Vivida
                 </p>
                 <div className="text-center sm:text-start mt-3">
                   <button className="px-3 py-1 md:py-2 md:px-4 rounded-full text-white btn-success font-semibold border border-green hover:bg-inherit bg-green-700 hover:text-white">
-                    Order Now
+                    Check Now
                   </button>
                 </div>
               </div>
@@ -51,15 +51,15 @@ export default function App() {
             <div className="my-auto mx-auto py-0 px-10 md:px-24 justify-center w-full h-full !absolute card-body flex md:items-start">
               <div className="max-w-[420px] text-start">
                 <h1 className="animate__animated animate__bounce font-bold text-lg md:leading-8 lg:leading-10 md:text-[26px] lg:text-[36px] text-white text-center sm:text-start mx-auto lg:mb-2">
-                  Finally, the dish you have been waiting for your table
+                  Finally, the creation you have been dreaming for your
+                  collection
                 </h1>
                 <p className="animate__animated animate__fadeIn text-white text-sm md:text-base lg:leading-8 text-center sm:text-start md:mb-2">
-                  For super nutrition, the chic and health conscious flock to
-                  Freshy.
+                  For radiant vitality, the sophisticated seek out Radiance
                 </p>
                 <div className="text-center sm:text-start mt-3">
                   <button className="px-3 py-1 md:py-2 md:px-4 rounded-full text-white btn-success font-semibold border border-green hover:bg-inherit bg-green-700 hover:text-white">
-                    Order Now
+                    Check Now
                   </button>
                 </div>
               </div>
@@ -78,15 +78,14 @@ export default function App() {
             <div className="my-auto mx-auto py-0 px-10 md:px-24 justify-center w-full h-full !absolute card-body flex md:items-start">
               <div className="max-w-[420px] text-start">
                 <h1 className="animate__animated animate__bounce font-bold text-lg md:leading-8 lg:leading-10 md:text-[26px] lg:text-[36px] text-white text-center sm:text-start mx-auto lg:mb-2">
-                  Finally, the dish you have been waiting for your table
+                  Finally, the project you have been envisioning for your hands
                 </h1>
                 <p className="animate__animated animate__fadeIn text-white text-sm md:text-base lg:leading-8 text-center sm:text-start md:mb-2">
-                  For super nutrition, the chic and health conscious flock to
-                  Freshy.
+                  For unparalleled nourishment, the elite indulge at Elysium
                 </p>
                 <div className="text-center sm:text-start mt-3">
                   <button className="px-3 py-1 md:py-2 md:px-4 rounded-full text-white btn-success font-semibold border border-green hover:bg-inherit bg-green-700 hover:text-white">
-                    Order Now
+                    Check Now
                   </button>
                 </div>
               </div>
@@ -105,15 +104,14 @@ export default function App() {
             <div className="my-auto mx-auto py-0 px-10 md:px-24 justify-center w-full h-full !absolute card-body flex md:items-start">
               <div className="max-w-[420px] text-start">
                 <h1 className="animate__animated animate__bounce font-bold text-lg md:leading-8 lg:leading-10 md:text-[26px] lg:text-[36px] text-white text-center sm:text-start mx-auto lg:mb-2">
-                  Finally, the dish you have been waiting for your table
+                  Finally, the inspiration you have been seeking for your soul
                 </h1>
                 <p className="animate__animated animate__fadeIn text-white text-sm md:text-base lg:leading-8 text-center sm:text-start md:mb-2">
-                  For super nutrition, the chic and health conscious flock to
-                  Freshy.
+                  For peak performance, the driven converge on Zenith
                 </p>
                 <div className="text-center sm:text-start mt-3">
                   <button className="px-3 py-1 md:py-2 md:px-4 rounded-full text-white btn-success font-semibold border border-green hover:bg-inherit bg-green-700 hover:text-white">
-                    Order Now
+                    Check Now
                   </button>
                 </div>
               </div>
