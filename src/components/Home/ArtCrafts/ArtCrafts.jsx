@@ -3,7 +3,7 @@ import ArtCraft from "./ArtCraft";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-const ArtCrafts = ({ headTitle, headDescription }) => {
+const ArtCrafts = ({ headTitle, headDescription, filteredItems }) => {
   const ArtCraftData = useLoaderData();
   const [ArtCraftLength, setArtCraftLength] = useState(6);
   return (
@@ -18,9 +18,9 @@ const ArtCrafts = ({ headTitle, headDescription }) => {
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-2 md:gap-6 my-2 md:my-8">
-          {ArtCraftData.slice(0, ArtCraftLength).map((ArtCraftData) => (
+          {filteredItems.slice(0, ArtCraftLength).map((ArtCraftData) => (
             <ArtCraft
-              key={ArtCraftData.id}
+              key={ArtCraftData._id}
               ArtCraftData={ArtCraftData}
             ></ArtCraft>
           ))}
@@ -45,5 +45,6 @@ const ArtCrafts = ({ headTitle, headDescription }) => {
 ArtCrafts.propTypes = {
   headTitle: PropTypes.any,
   headDescription: PropTypes.any,
+  filteredItems: PropTypes.any,
 };
 export default ArtCrafts;

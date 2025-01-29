@@ -1,5 +1,6 @@
 [
   {
+    "_id": "01",
     "image": "https://i.ibb.co.com/qCchbTS/Recipe1.png",
     "item_name": "Handmade Ceramic Vase",
     "subcategory_name": "Ceramics",
@@ -13,6 +14,7 @@
     "user_name": "Alice Johnson"
   },
   {
+    "_id": "02",
     "image": "https://i.ibb.co.com/txcHtrK/Recipe2.png",
     "item_name": "Handcrafted Wooden Photo Frame",
     "subcategory_name": "Woodcraft",
@@ -26,6 +28,7 @@
     "user_name": "Jake Miller"
   },
   {
+    "_id": "03",
     "image": "https://i.ibb.co.com/zf85bnC/vegetable-stir-fry.jpg",
     "item_name": "Handmade Knitted Blanket",
     "subcategory_name": "Textiles",
@@ -37,5 +40,89 @@
     "stock_status": "In stock",
     "user_email": "craftsbyemma@example.com",
     "user_name": "Emma Brown"
+  },
+  {
+    "_id": "04",
+    "image": "https://i.ibb.co.com/93qK6m2/paneer-tikka.jpg",
+    "item_name": "Handmade Wooden Bowl",
+    "subcategory_name": "Woodcraft",
+    "short_description": "A beautifully handcrafted wooden bowl made from oak.",
+    "price": 19.99,
+    "rating": 4.7,
+    "customization": "yes",
+    "processing_time": 3,
+    "stock_status": "In stock",
+    "user_email": "user1@example.com",
+    "user_name": "Alice"
+  },
+  {
+    "_id": "05",
+    "image": "https://i.ibb.co.com/FKgrhVX/fish-tacos.jpg",
+    "item_name": "Custom Ceramic Mug",
+    "subcategory_name": "Ceramics",
+    "short_description": "A unique ceramic mug that can be customized with your name.",
+    "price": 12.99,
+    "rating": 4.3,
+    "customization": "yes",
+    "processing_time": 2,
+    "stock_status": "Made to Order",
+    "user_email": "user2@example.com",
+    "user_name": "Bob"
+  },
+  {
+    "_id": "06",
+    "image": "https://i.ibb.co.com/nMTX0HK/beef-stew.jpg",
+    "item_name": "Painted Canvas",
+    "subcategory_name": "Painting",
+    "short_description": "A hand-painted canvas with abstract designs.",
+    "price": 45.0,
+    "rating": 4.9,
+    "customization": "no",
+    "processing_time": 7,
+    "stock_status": "In stock",
+    "user_email": "user3@example.com",
+    "user_name": "Carol"
+  },
+  {
+    "_id": "07",
+    "image": "https://i.ibb.co.com/93qK6m2/paneer-tikka.jpg",
+    "item_name": "Knitted Scarf",
+    "subcategory_name": "Knitting",
+    "short_description": "A warm scarf knitted by hand using premium wool.",
+    "price": 29.99,
+    "rating": 4.8,
+    "customization": "yes",
+    "processing_time": 4,
+    "stock_status": "Made to Order",
+    "user_email": "user4@example.com",
+    "user_name": "David"
+  },
+  {
+    "_id": "08",
+    "image": "https://i.ibb.co.com/qCchbTS/Recipe1.png",
+    "item_name": "Handmade Leather Wallet",
+    "subcategory_name": "Leathercraft",
+    "short_description": "A stylish leather wallet made with genuine leather.",
+    "price": 39.99,
+    "rating": 4.6,
+    "customization": "yes",
+    "processing_time": 5,
+    "stock_status": "In stock",
+    "user_email": "user5@example.com",
+    "user_name": "Eve"
+  },
+  {
+    "_id": "09",
+    "image": "https://i.ibb.co.com/txcHtrK/Recipe2.png",
+    "item_name": "Bespoke Wooden Jewelry Box",
+    "subcategory_name": "Woodcraft",
+    "short_description": "A customized wooden jewelry box with intricate carvings.",
+    "price": 59.99,
+    "rating": 5.0,
+    "customization": "yes",
+    "processing_time": 7,
+    "stock_status": "Made to Order",
+    "user_email": "user6@example.com",
+    "user_name": "Frank"
   }
 ]

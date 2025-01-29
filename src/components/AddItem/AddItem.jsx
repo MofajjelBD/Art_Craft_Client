@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider";
 // import AddItemP from "../../assets/AddItem.jpg";
 const AddItem = () => {
+  const { user } = useContext(AuthContext);
   const handleAddCraft = (event) => {
     event.preventDefault();
 
@@ -103,8 +106,9 @@ const AddItem = () => {
                 </div>
                 <div className="form-control md:w-1/2">
                   <input
+                    defaultValue="45.99"
                     name="price"
-                    type="text"
+                    type="number"
                     placeholder="Price"
                     className="w-full bg-gray-100 rounded-lg py-3 px-6 text-sm outline-none"
                   />
@@ -114,7 +118,8 @@ const AddItem = () => {
                 <div className="form-control md:w-1/2">
                   <input
                     name="rating"
-                    type="text"
+                    defaultValue="5"
+                    type="number"
                     placeholder="Rating"
                     className="w-full bg-gray-100 rounded-lg py-3 px-6 text-sm outline-none"
                   />
@@ -122,7 +127,8 @@ const AddItem = () => {
                 <div className="form-control md:w-1/2">
                   <input
                     name="processing_time"
-                    type="text"
+                    defaultValue="3"
+                    type="number"
                     placeholder="Processing Time"
                     className="w-full bg-gray-100 rounded-lg py-3 px-6 text-sm outline-none"
                   />
@@ -165,6 +171,8 @@ const AddItem = () => {
               <div className="gap-4 flex">
                 <div className="form-control md:w-1/2">
                   <input
+                    value={user.email}
+                    disabled
                     name="user_email"
                     type="email"
                     placeholder="User Email"
@@ -173,10 +181,12 @@ const AddItem = () => {
                 </div>
                 <div className="form-control md:w-1/2">
                   <input
+                    value={user.displayName}
+                    disabled
                     name="user_name"
                     type="text"
                     placeholder="User Name"
-                    className="w-full bg-gray-100 rounded-lg py-3 px-6 text-sm outline-none"
+                    className="w-full bg-gray-100 rounded-lg !py-3 px-6 text-sm outline-none"
                   />
                 </div>
               </div>
