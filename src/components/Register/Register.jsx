@@ -51,7 +51,15 @@ const Register = () => {
     createUser(auth, email, password)
       .then((result) => {
         const user = result.user;
-
+        if (result.user) {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Registration successful",
+            showConfirmButton: false,
+            timer: 2500,
+          });
+        }
         // Update profile with name and photoURL
         return updateProfile(user, {
           displayName: name,
@@ -67,13 +75,6 @@ const Register = () => {
         });
       })
       .then(() => {
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title: "Registration successful",
-          showConfirmButton: false,
-          timer: 2500,
-        });
         // navigate after Registration
         navigate(location?.state ? location.state : "/");
       })

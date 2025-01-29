@@ -85,7 +85,7 @@ const Login = () => {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Welcome to Freshy",
+            title: "Login successful",
             showConfirmButton: false,
             timer: 2500,
           });
