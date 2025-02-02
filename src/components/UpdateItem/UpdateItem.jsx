@@ -73,7 +73,7 @@ const UpdateItem = () => {
             }).then((result) => {
               if (result.isConfirmed) {
                 // Redirect to the my list page when "Go Back My List" is clicked
-                window.location.href = "/MyList";
+                window.location.href = "/my-list";
               }
             });
           }

@@ -22,19 +22,17 @@ const ArtCrafts = ({ headTitle, headDescription, filteredItems }) => {
               ArtCraftData={ArtCraftData}
             ></ArtCraft>
           ))}
-          <div>
-            <button
-              onClick={() => setArtCraftLength(filteredItems.length)}
-              className={
-                ArtCraftLength === filteredItems.length ||
-                filteredItems.length <= 6
-                  ? "hidden"
-                  : "btn font-WorkSans text-white text-opacity-100 font-semibold text-base md:text-lg border border-transparent bg-green-500 px-5 hover:bg-green-500"
-              }
-            >
-              Show All ArtCrafts
-            </button>
-          </div>
+          <button
+            onClick={() => setArtCraftLength(filteredItems.length)}
+            className={
+              ArtCraftLength === filteredItems.length ||
+              filteredItems.length <= 6
+                ? "hidden"
+                : "btn font-WorkSans text-white text-opacity-100 font-semibold text-base md:text-lg border border-transparent bg-green-500 px-5 hover:bg-green-500"
+            }
+          >
+            Show All ArtCrafts
+          </button>
         </div>
       </div>
     </>
