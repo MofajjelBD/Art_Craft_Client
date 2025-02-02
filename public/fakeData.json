@@ -35,7 +35,7 @@
     "short_description": "A cozy, hand-knitted blanket perfect for winter nights.",
     "price": 60.0,
     "rating": 4.8,
-    "customization": "yes",
+    "customization": "no",
     "processing_time": 5,
     "stock_status": "In stock",
     "user_email": "developer2web@gmail.com",

@@ -14,7 +14,7 @@ const Testimonial = () => {
             Testimonial
           </h1>
           <p className="text-lg md:text-4xl font-black dark:text-slate-200 text-opacity-100 dark:text-opacity-100 font-Inter pt-5 pb-2">
-            All ours best meals in one delicious snap
+            Our Best Creations in One Inspiring Review
           </p>
         </div>
         <Swiper
@@ -64,9 +64,9 @@ const Testimonial = () => {
                     </span>
                   </div>
                   <p className="text-base text-gray-600 leading-6  transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
-                    This recipe turned out amazing! The flavors were perfectly
-                    balanced, and it was easy to follow. Definitely adding this
-                    to my favorites!
+                    This artwork turned out amazing! The colors blended
+                    perfectly, and the steps were easy to follow. I’ll
+                    definitely be trying more pieces like this!
                   </p>
                 </div>
                 <div className="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
@@ -105,9 +105,10 @@ const Testimonial = () => {
                     </span>
                   </div>
                   <p className="text-base text-gray-600 leading-6  transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
-                    I love how simple yet delicious this recipe is! The
-                    ingredients are fresh, and the taste is authentic. My family
-                    loved it.
+                    I’m so pleased with how my creation turned out! The process
+                    was easy to follow, and the end result exceeded my
+                    expectations. I’ll definitely be recommending this to my
+                    friends!
                   </p>
                 </div>
                 <div className="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
@@ -146,9 +147,9 @@ const Testimonial = () => {
                     </span>
                   </div>
                   <p className="text-base text-gray-600 leading-6  transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
-                    This was my first time trying this recipe, and I’m
-                    impressed! The instructions were clear, and the dish came
-                    out perfectly.
+                    This painting technique was fantastic! The process was easy
+                    to understand, and the end result looks amazing. It is
+                    definitely going on my wall!
                   </p>
                 </div>
                 <div className="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
@@ -187,8 +188,9 @@ const Testimonial = () => {
                     </span>
                   </div>
                   <p className="text-base text-gray-600 leading-6  transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
-                    A fantastic recipe! I didn’t expect it to be this flavorful.
-                    It’s now a go-to meal in my weekly cooking routine.
+                    I loved this DIY craft project! The materials were easy to
+                    work with, and the final piece turned out beautifully. I’ll
+                    definitely be making more!
                   </p>
                 </div>
                 <div className="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
@@ -227,8 +229,9 @@ const Testimonial = () => {
                     </span>
                   </div>
                   <p className="text-base text-gray-600 leading-6  transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
-                    Tried this recipe for dinner tonight, and it was a hit! The
-                    steps were easy, and the dish tasted absolutely amazing.
+                    This craft kit was incredible! The instructions were clear,
+                    and the materials were high-quality. I’m thrilled with how
+                    my project turned out, and I can’t wait to try another!
                   </p>
                 </div>
                 <div className="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">

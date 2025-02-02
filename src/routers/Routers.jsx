@@ -11,6 +11,7 @@ import ArtCraftView from "../components/Home/ArtCrafts/ArtCraftView";
 import MyList from "../components/MyList/MyList";
 import AddItem from "../components/AddItem/AddItem";
 import Update from "../components/UpdateUser/Update";
+import UpdateItem from "../components/UpdateItem/UpdateItem";
 
 const router = createBrowserRouter([
   {
@@ -21,12 +22,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
       },
       {
         path: "/AllItems",
         element: <AllItems></AllItems>,
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
       },
       {
         path: "/AddItem",
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
             <MyList></MyList>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/craft"),
+        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
       },
       {
         path: "/login",
@@ -68,7 +69,20 @@ const router = createBrowserRouter([
             <ArtCraftView></ArtCraftView>
           </PrivateRoute>
         ),
-        loader: () => fetch("/fakeData.json"),
+        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
+      },
+      {
+        path: "/item-update/:_id",
+        element: (
+          <PrivateRoute>
+            <UpdateItem></UpdateItem>
+          </PrivateRoute>
+        ),
+        // loader: () => fetch("/fakeData.json"),
+        loader: ({ params }) =>
+          fetch(
+            `https://art-craft-server-gamma.vercel.app/craft/${params._id}`
+          ),
       },
     ],
   },
