@@ -25,12 +25,12 @@ const router = createBrowserRouter([
         loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
       },
       {
-        path: "/AllItems",
+        path: "/all-items",
         element: <AllItems></AllItems>,
         loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
       },
       {
-        path: "/AddItem",
+        path: "/add-item",
         element: (
           <PrivateRoute>
             <AddItem></AddItem>
