@@ -27,7 +27,7 @@ const MyList = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://art-craft-server-gamma.vercel.app/craft/${_id}`, {
+        fetch(`https://art-craft-server-two.vercel.app/craft/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

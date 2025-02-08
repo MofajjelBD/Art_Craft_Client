@@ -22,12 +22,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
+        loader: () => fetch("https://art-craft-server-two.vercel.app/craft"),
       },
       {
         path: "/all-items",
         element: <AllItems></AllItems>,
-        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
+        loader: () => fetch("https://art-craft-server-two.vercel.app/craft"),
       },
       {
         path: "/add-item",
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
             <MyList></MyList>
           </PrivateRoute>
         ),
-        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
+        loader: () => fetch("https://art-craft-server-two.vercel.app/craft"),
       },
       {
         path: "/login",
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
             <ArtCraftView></ArtCraftView>
           </PrivateRoute>
         ),
-        loader: () => fetch("https://art-craft-server-gamma.vercel.app/craft"),
+        loader: () => fetch("https://art-craft-server-two.vercel.app/craft"),
       },
       {
         path: "/item-update/:_id",
@@ -80,9 +80,7 @@ const router = createBrowserRouter([
         ),
         // loader: () => fetch("/fakeData.json"),
         loader: ({ params }) =>
-          fetch(
-            `https://art-craft-server-gamma.vercel.app/craft/${params._id}`
-          ),
+          fetch(`https://art-craft-server-two.vercel.app/craft/${params._id}`),
       },
     ],
   },

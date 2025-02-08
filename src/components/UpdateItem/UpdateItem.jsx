@@ -54,7 +54,7 @@ const UpdateItem = () => {
 
     if (isOwner) {
       // send data to the server
-      fetch(`https://art-craft-server-gamma.vercel.app/craft/${_id}`, {
+      fetch(`https://art-craft-server-two.vercel.app/craft/${_id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

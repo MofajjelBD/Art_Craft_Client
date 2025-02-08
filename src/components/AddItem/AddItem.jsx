@@ -39,7 +39,7 @@ const AddItem = () => {
     console.log(newCraft);
 
     // send data to the server
-    fetch("https://art-craft-server-gamma.vercel.app/craft", {
+    fetch("https://art-craft-server-two.vercel.app/craft", {
       method: "POST",
       headers: {
         "content-type": "application/json",
